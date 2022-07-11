@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    <style>
+        *{padding:0;margin: 0; box-sizing:border-box;}
+        #header
+        {
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+            display: flex;
+            color:white;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 20px;
+            position: fixed;
+            top: 0;
+        }
+        #banner
+        {
+            margin-top: 120px;
+            width: 100%;
+            height: 800px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-image: url(https://th.bing.com/th/id/OIP.QsgAj530cJJlhhvHylZ8uAHaEo?pid=ImgDet&rs=1);
+            background-repeat: no-repeat;
+            
+            background-size: cover;
+
+        }
+        #logo
+        {
+            width: 70px;
+            height: 70px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+
+        }
+        #sec-1
+        {
+            
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #sec-1 .circle
+        {
+            width: 250px;
+            height: 250px;
+            background-color:coral;
+            border-radius: 50%;
+            margin: 20px;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           color:white;
+        }
+        h2
+        {
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 30px;
+        
+        }
+        #sec-2
+        {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        #sec-2 main
+        {
+            width: 50%;
+            height: 500px;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+        aside
+        {
+            width:48%;
+            height: 500px;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            flex-direction: column;
+
+        }
+    
+        aside .art
+        {
+            width:100%;
+            height:150px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            
+
+            
+        }
+
+        #sec-3
+        {
+            
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #sec-3 .square
+        {
+            width: 250px;
+            height: 250px;
+            background-color:orangered;
+            margin: 20px;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           color: white;
+          transition: 1s;
+        }
+
+        footer
+        {
+            width: 100%;
+            height:100px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+
+            
+        }
+        #sec-3 .square:hover
+    {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: 5px 5px 10px grey;
+        background-color: blueviolet;
+transform: scale(1.5);
+    }
+    nav ul
+    {
+        list-style: none;
+        display: flex;
+    }
+    nav ul li a
+    {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        font-size: 20px;
+         transition: 1s;
+          
+    }
+
+    nav ul li a:hover
+    {
+        background-color: white;
+        color: black;
+
+    }
+    </style>
+</head>
+<body>
+    
+   <header id="header">
+        <div id="logo">LOGO
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div id="banner">
+        <h1>Banner</h1>
+    </div>
+    <h2>Section-1</h2>
+    <section id="sec-1">
+        <div class="circle">circle-1</div>
+        <div class="circle">circle-2</div>
+        <div class="circle">circle-3</div>
+        <div class="circle">circle-4</div>
+    </section>
+    <h2>Section-2</h2>
+    <section id="sec-2"> 
+        <main>
+            Main Content
+        </main>
+        <aside>
+            <article id="art-1" class="art">Article-1</article>
+            <article id="art-2" class="art">Article-2</article>
+            <article id="art-3" class="art">Article-3</article>
+        </aside>
+    </section>
+    <h2>Section-3</h2>
+    <section id="sec-3">
+        <div class="square">square-1</div>
+        <div class="square">square-2</div>
+        <div class="square">square-3</div>        
+        <div class="square">square-4</div>
+    </section>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
